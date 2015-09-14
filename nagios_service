@@ -1,0 +1,17 @@
+define service{
+        use                     generic-service
+        host_name               <CS800 hostname>
+        service_description     System Status
+        is_volatile             0
+        check_interval          60
+        check_command           check_cs800_status!<IP>
+}
+
+define service{
+        use                     generic-service
+        host_name               <CS800 hostname>
+        service_description     System Status
+        is_volatile             0
+        check_interval          60
+        check_command           check_cs800_status!<IP>
+}
